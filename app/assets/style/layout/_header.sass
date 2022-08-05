@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    首頁 banner 區塊
+/*------------------------------------*\
+
+.header
+    +backgroundCover('../images/banner.png')
+    +flexGrid(flex-end)
+    text-align: right
+    height: 787px
+
+    &-container
+        margin: 0 auto
+        padding: 0 12px
+        width: 1320px
+
+    +respond-to('sphone')
+        +size(100%,396px)
+
+    &-subtitle 
+        +fontSize(36px, 54px)
+        color: $color-third
+
+        +respond-to('sphone')
+            +fontSize(16px,24px)
+
+    &-title 
+        +fontSize(64px, 96px, bold)
+        color: $color-third
+        +respond-to('sphone')
+            +fontSize(24px,36px,bold)
+
+    &-btn
+        +fontSize(20px, 30px)
+        background-color: $color-primary
+        color: $color-white
+        padding: 6px 12px
+        cursor: pointer
+        @extend .border-none

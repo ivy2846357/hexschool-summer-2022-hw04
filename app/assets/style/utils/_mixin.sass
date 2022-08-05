@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    mixin 設定
+/*------------------------------------*\
+    
+/* ------------------- 斷點設定 ------------------- */
+
+$breakpoint-notebook: 1200px
+$breakpoint-pad: 992px
+$breakpoint-phone: 768px
+$breakpoint-sphone: 375px
+
+=respond-to($breakponit)
+    @if($breakponit == 'pc')
+        @media screen and (max-width: #{$breakpoint-notebook})
+            @content
+    @else if($breakponit == 'pad')
+        @media screen and (max-width: #{$breakpoint-pad})
+            @content
+    @else if($breakponit == 'phone')
+        @media screen and (max-width: #{$breakpoint-phone})
+            @content
+    @else if($breakponit == 'sphone')
+        @media screen and (max-width: #{$breakpoint-sphone})
+            @content
+
+/* ------------------- mixin 設定 ------------------- */
+
+//- flex 樣式設定（預設置中、橫向排列）
+=flexGrid($jc:center, $ai:center, $direction: row)
+    display: flex
+    justify-content: $jc
+    align-items: $ai
+
+//- 寬高設定
+=size($w, $h: $w)
+    width: $w
+    height: $h
+
+//- 背景圖片置中
+=backgroundCover($img: imgurl)
+    background-image: url($img)
+    background-position: center
+    background-size: cover
+
+// 字體大小設定
+=fontSize($fz, $lh, $fw:400)
+    font-size: $fz
+    line-height: $lh
+    font-weight: $fw
+
+.border-none
+    border: none
+    outline: none

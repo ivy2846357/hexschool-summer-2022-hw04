@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    聯絡我們表單樣式
+/*------------------------------------*\
+
+.form
+    width: 636px
+    margin: 24px 0 48px 0
+    +respond-to('phone')
+        width: 100%
+
+    // 文字設定
+    &-text
+        display: block
+        +fontSize(16px,24px)
+        margin-bottom: 8px
+
+    // 欄位設定
+    &-input
+        width: 100%
+        padding: 6px 12px
+        margin-bottom: 16px
+        background-color: transparent
+        outline: none
+        border: 1px solid $color-black
+
+        &:focus
+            outline: none
+
+    // 送出按鈕
+    &-submit-btn
+        padding: 16px 176px
+        background-color: $color-primary
+        color: $color-white
+        cursor: pointer
+        @extend .border-none
+
+        +respond-to('sphone')
+            width: 100%
+            padding: 16px 142px

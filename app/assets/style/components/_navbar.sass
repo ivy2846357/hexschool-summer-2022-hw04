@@ -1,0 +1,102 @@
+/*------------------------------------*\
+    導覽列設定
+/*------------------------------------*\
+    
+.navbar
+    background-color: $color-primary
+
+    // 導覽列整體架構
+    &-item
+        +flexGrid(space-between)
+        position: relative
+
+        +respond-to('sphone')
+            display: block
+
+    // 導覽列表
+    &-menu
+        +flexGrid
+
+        // 漢堡選單設定
+        +respond-to('sphone')
+            transition: .3s
+            display: block
+            position: absolute
+            top: 81px
+            left: 0
+            right: 0
+            background-color: $color-primary
+            opacity: 0
+
+            &.active
+                opacity: 1
+
+        &-item
+            +flexGrid(space-between)
+            margin-right: 64px
+            &:last-child
+                margin-right: 0
+
+            +respond-to('sphone')
+                margin-right: 8px
+                display: block
+                text-align: right
+                &:last-child
+                    margin-right: 8px
+
+        &-link
+            +fontSize(20px, 30px)
+            color: $color-white
+            transition: .2s
+            display: inline-block
+            padding: 8px 0
+            @extend .link-border-animation
+
+    // LOGO 圖片
+    &-img
+        padding: 16px
+    
+    // 漢堡選單設定
+    &-hamburger
+        
+        &-menu
+            display: none
+            cursor: pointer
+            +size(30px, 30px)
+            position: absolute
+            top: 25px
+            right: 20px
+
+            +respond-to('sphone')
+                display: inline-block
+
+        &-btn
+            +size(30px, 3px)
+            background-color: $color-white
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            transition: .3s
+
+            &::after,
+            &::before
+                content: ''
+                +size(30px, 3px)
+                background-color: $color-white
+                position: absolute
+                left: 0
+                transition: .3s
+
+            &::before
+                transform: translateY(8px)
+            &::after
+                transform: translateY(-8px)
+
+            &.active
+                background-color: transparent
+
+                &::before
+                    transform: translateY(0px) rotate(45deg)
+                &::after
+                    transform: translateY(0px) rotate(-45deg)

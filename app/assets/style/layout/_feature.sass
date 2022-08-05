@@ -1,0 +1,77 @@
+/*------------------------------------*\
+    商品特色區塊
+/*------------------------------------*\
+
+.feature
+
+    // 經典系列商品
+    &-classic
+
+        &-list
+            +flexGrid(flex-start,center)
+            margin-top: 48px
+            flex-wrap: wrap
+
+            +respond-to('sphone')
+                width: 100%
+                margin-top: 24px
+            
+        &-item
+            width: 30%
+            margin-right: 24px
+            overflow: hidden
+            &:last-child
+                margin-right: 0
+
+            +respond-to('phone')
+                +flexGrid(flex-start,center)
+                flex-direction: column
+                width: 100%
+                margin: 0 0 24px 0
+
+        &-img
+            margin-bottom: 8px
+
+            +respond-to('phone')
+                width: 50%
+
+            +respond-to('sphone')
+                width: 100%
+
+    // 聯名設計商品
+    &-signed
+        +backgroundCover('../images/bg.png')
+
+        &-list
+            display: flex
+            margin-top: 48px
+
+            +respond-to('phone')
+                flex-wrap: wrap
+            +respond-to('sphone')
+                margin-top: 24px
+
+        &-item
+            +size(100%)
+            cursor: pointer
+            >h4
+                transition: .3s
+
+            &:hover
+                >h4
+                    background-color: $color-primary
+                    color: #fff
+            
+            +respond-to('phone')
+                &:first-child
+                    margin-bottom: 24px
+
+        &-img
+            height: 240px
+
+// 商品圖片
+.woman-img
+    +backgroundCover('../images/product-8.png')
+
+.glasses-img
+    +backgroundCover('../images/product-9.png')
