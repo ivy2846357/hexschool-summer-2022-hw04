@@ -1138,4 +1138,28 @@ img {
   -o-transition: .3s;
   transition: .3s; }
 
+/*------------------------------------*\
+    常見問題設定 */
+/*------------------------------------*\ */
+.question-title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-bottom: 24px; }
+
+.question-info {
+  margin-bottom: 32px; }
+  .question-info:last-child {
+    margin-bottom: 0; }
+  .question-info-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 8px; }
+  .question-info-answer {
+    max-width: 856px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400; }
+
 /*# sourceMappingURL=all.css.map */
