@@ -16,6 +16,88 @@
     變數設定 */
 /*------------------------------------*\ */
 /* ------------------- 顏色設定 ------------------- */
+/* ------------------- 顧客評價圖片設定 ------------------- */
+.recommend-img.customer-01 {
+  background-image: url("../images/rec-1.png");
+  background-position: center;
+  background-size: cover; }
+
+.recommend-img.customer-02 {
+  background-image: url("../images/rec-2.png");
+  background-position: center;
+  background-size: cover; }
+
+.recommend-img.customer-03 {
+  background-image: url("../images/rec-3.png");
+  background-position: center;
+  background-size: cover; }
+
+.recommend-img.customer-04 {
+  background-image: url("../images/rec-4.png");
+  background-position: center;
+  background-size: cover; }
+
+/* ------------------- 經典鏡框商品圖片設定 ------------------- */
+.optical-product-1 {
+  background-image: url("../images/products-1.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-2 {
+  background-image: url("../images/products-2.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-3 {
+  background-image: url("../images/products-3.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-4 {
+  background-image: url("../images/products-4.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-5 {
+  background-image: url("../images/products-5.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-6 {
+  background-image: url("../images/products-6.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-7 {
+  background-image: url("../images/products-7.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-8 {
+  background-image: url("../images/products-8.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-9 {
+  background-image: url("../images/products-9.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-10 {
+  background-image: url("../images/products-10.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-11 {
+  background-image: url("../images/products-11.png");
+  background-position: center;
+  background-size: cover; }
+
+.optical-product-12 {
+  background-image: url("../images/products-12.png");
+  background-position: center;
+  background-size: cover; }
+
 /*------------------------------------*\
     CSS reset */
 /*------------------------------------*\ */
@@ -435,6 +517,10 @@ img {
 .section-fill {
   background-color: #FBF2F2; }
 
+.section-default {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
 .section-index {
   padding-top: 80px;
   padding-bottom: 80px; }
@@ -510,6 +596,18 @@ img {
       background-position: center;
       background-size: cover; }
 
+.section-product-title {
+  font-size: 42px;
+  line-height: 63px;
+  font-weight: 400;
+  text-align: center; }
+
+.section-product-subtitle {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 400;
+  text-align: center; }
+
 /*------------------------------------*\
     聯絡我們表單樣式 */
 /*------------------------------------*\ */
@@ -543,6 +641,31 @@ img {
       .form-submit-btn {
         width: 100%;
         padding: 16px 142px; } }
+
+/*------------------------------------*\
+    分頁元件設定 */
+/*------------------------------------*\ */
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .pagination-btn {
+    border: 1px solid #555555;
+    padding: 12px 16px;
+    cursor: pointer; }
+    .pagination-btn:hover {
+      background-color: #F2F2F2; }
+    .pagination-btn.active {
+      background-color: black;
+      color: white; }
+    .pagination-btn-prev, .pagination-btn-next {
+      padding: 12px 11px; }
 
 /*------------------------------------*\
     首頁 banner 區塊 */
@@ -836,25 +959,56 @@ img {
   font-weight: 400;
   color: #707070; }
 
-/* ------------------- 圖片設定 ------------------- */
-.recommend-img.customer-01 {
-  background-image: url("../images/rec-1.png");
-  background-position: center;
-  background-size: cover; }
+/*------------------------------------*\
+    商品列表設定 */
+/*------------------------------------*\ */
+.product-list {
+  margin: 32px 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .product-list-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .product-list-num {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400; }
+  .product-list-price {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #AA0601; }
+  .product-list-colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .product-list-color {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px; }
+    .product-list-color.dark-brown {
+      background-color: #5F3E2D; }
+    .product-list-color.light-brown {
+      background-color: #B75929; }
 
-.recommend-img.customer-02 {
-  background-image: url("../images/rec-2.png");
-  background-position: center;
-  background-size: cover; }
+.product-optical-item {
+  width: 23%;
+  margin-right: 24px; }
+  .product-optical-item:nth-child(4n) {
+    margin-right: 0; }
 
-.recommend-img.customer-03 {
-  background-image: url("../images/rec-3.png");
-  background-position: center;
-  background-size: cover; }
-
-.recommend-img.customer-04 {
-  background-image: url("../images/rec-4.png");
-  background-position: center;
-  background-size: cover; }
+.product-optical-img {
+  height: 224px; }
 
 /*# sourceMappingURL=all.css.map */
