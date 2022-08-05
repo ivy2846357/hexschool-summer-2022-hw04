@@ -51,3 +51,14 @@
     &-form
         +flexGrid(center,center)
         flex-direction: column
+
+    &-banner
+        display: flex
+        
+        &-img
+            +size(50%,296px)
+
+            &.optical-img-glasses  
+                +backgroundCover('../images/banner-1.png')
+            &.optical-img-woman
+                +backgroundCover('../images/banner-2.png')

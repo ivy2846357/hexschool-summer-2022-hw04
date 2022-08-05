@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    商品導覽列設定
+/*------------------------------------*\
+    
+.subNavbar
+    display: flex
+
+    &-item
+        width: 33%
+
+    &-link
+        display: inline-block
+        width: 100%
+        text-align: center
+        padding: 24px 0
+        border: 1px solid $color-lightGary
+        color: $color-black
+        position: relative
+        +fontSize(32px,48px)
+
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+
+        &:hover
+            &::after
+                +size(100%,8px)
+                background-color: $color-primary
