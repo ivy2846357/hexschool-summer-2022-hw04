@@ -8,14 +8,25 @@
         display: flex
         flex-wrap: wrap
 
+    &-detail
+
     &-card
-        width: 30%
-        margin-right: 24px
-        &:nth-child(3n)
-            margin: 0 0 48px 0
+
+        &-introduction
+            width: 30%
+            margin-right: 24px
+            &:nth-child(3n)
+                margin: 0 0 48px 0
+
+        &-detail
+            width: 40%
+            margin-right: 24px
 
         &-info
             display: flex
+            margin-bottom: 8px
+            &:last-child
+                margin-bottom: 0px
 
         &-img
             height: 224px
@@ -36,12 +47,12 @@
 
         &-btn
             +fontSize(19px, 27px)
+            display: inline-block
             width: 100%
             text-align: center
             padding: 16px 0
             background-color: $color-black
             color: $color-white
-            cursor: pointer
             transition: .3s
             
             @extend .border-none
