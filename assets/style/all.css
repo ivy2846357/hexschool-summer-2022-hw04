@@ -1084,45 +1084,58 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.store-card {
+.store-card-introduction {
   width: 30%;
   margin-right: 24px; }
-  .store-card:nth-child(3n) {
+  .store-card-introduction:nth-child(3n) {
     margin: 0 0 48px 0; }
-  .store-card-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .store-card-img {
-    height: 224px; }
-  .store-card-title {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 400;
-    padding: 8px 24px;
-    border: 1px solid #00000029; }
-  .store-card-content {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
-    padding: 16px 24px;
-    border: 1px solid #00000029; }
-  .store-card-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px; }
-  .store-card-btn {
-    font-size: 19px;
-    line-height: 27px;
-    font-weight: 400;
-    width: 100%;
-    text-align: center;
-    padding: 16px 0;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
+
+.store-card-detail {
+  width: 40%;
+  margin-right: 24px; }
+
+.store-card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px; }
+  .store-card-info:last-child {
+    margin-bottom: 0px; }
+
+.store-card-img {
+  height: 224px; }
+
+.store-card-title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  padding: 8px 24px;
+  border: 1px solid #00000029; }
+
+.store-card-content {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 16px 24px;
+  border: 1px solid #00000029; }
+
+.store-card-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px; }
+
+.store-card-btn {
+  font-size: 19px;
+  line-height: 27px;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 16px 0;
+  background-color: black;
+  color: white;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
 
 /*# sourceMappingURL=all.css.map */
