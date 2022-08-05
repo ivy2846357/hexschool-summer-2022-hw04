@@ -28,5 +28,17 @@ $color-black: black
 /* ------------------- 經典鏡框商品圖片設定 ------------------- */
 
 @for $i from 1 through 12
-    .optical-product-#{$i}
-        +backgroundCover('../images/products-#{$i}.png')
+
+    @if $i <= 4
+        .optical-product-#{$i}
+            +backgroundCover('../images/products-#{$i}.png')
+    @else 
+        .optical-product-#{$i}
+            +backgroundCover('../images/products-#{$i}.jpg')
+
+/* ------------------- 門市據點圖片設定 ------------------- */
+
+@for $i from 1 through 5
+    .store-card-img
+        &.store-#{$i}
+            +backgroundCover('../images/locate#{$i}.jpg')

@@ -12,6 +12,16 @@
     &-default
         padding-top: 80px
         padding-bottom: 80px
+
+    // 共用標題
+    &-title
+        +fontSize(48px,72px,bold)
+        border-left: 8px solid $color-primary
+        padding-left: 16px
+        margin: 16px 0 33px 0
+
+        +respond-to('sphone')
+            +fontSize(24px,36px,bold)
     
     // 首頁樣式
     &-index
