@@ -7,6 +7,11 @@
     // 底色區塊
     &-fill
         background-color: $color-secondary
+
+    // 首頁樣式
+    &-default
+        padding-top: 80px
+        padding-bottom: 80px
     
     // 首頁樣式
     &-index
@@ -62,3 +67,12 @@
                 +backgroundCover('../images/banner-1.png')
             &.optical-img-woman
                 +backgroundCover('../images/banner-2.png')
+
+    &-product
+
+        &-title
+            +fontSize(42px,63px)
+            text-align: center
+        &-subtitle
+            +fontSize(32px,48px)
+            text-align: center

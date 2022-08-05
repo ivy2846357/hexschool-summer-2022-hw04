@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    商品列表設定
+/*------------------------------------*\
+
+.product
+
+    &-list
+        margin: 32px 0 80px 0
+        display: flex
+        flex-wrap: wrap
+
+        &-content
+            +flexGrid(space-between)
+
+        &-num
+            +fontSize(24px, 36px)
+
+        &-price
+            +fontSize(24px, 36px)
+            color: $color-primary
+
+        &-colors
+            display: flex
+
+        &-color
+            +size(24px)
+            border-radius: 4px
+            margin-right: 8px
+
+            &.dark-brown
+                background-color: $color-darkBrown
+            &.light-brown
+                background-color: $color-lightBrown
+    
+    &-optical
+
+        &-item
+            width: 23%
+            margin-right: 24px
+
+            &:nth-child(4n)
+                margin-right: 0
+
+        &-img
+            height: 224px
