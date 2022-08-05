@@ -731,6 +731,37 @@ img {
     color: #495057; }
 
 /*------------------------------------*\
+    搜尋欄導覽列設定 */
+/*------------------------------------*\ */
+.search-menu {
+  background-color: #650300; }
+  .search-menu > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.search-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .search-navbar-link {
+    display: inline-block;
+    padding: 13px 0;
+    margin-right: 48px;
+    color: white;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .search-navbar-link:hover {
+      color: #ffba08; }
+
+/*------------------------------------*\
     首頁 banner 區塊 */
 /*------------------------------------*\ */
 .header {
