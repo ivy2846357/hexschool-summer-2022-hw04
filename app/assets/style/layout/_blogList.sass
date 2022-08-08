@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    部落格文章列表樣式
+/*------------------------------------*\
+
+.blog-article
+
+    &-item
+        display: flex
+        margin-bottom: 60px
+        &:last-child
+            margin-bottom: 124px
+
+    &-img
+        +size(50%,400px)
+        margin-right: 24px
+
+    &-content
+        +flexGrid(space-between,flex-end)
+        flex-direction: column
+        width: 50%
+
+    &-title
+        +fontSize(32px,48px)
+        color: $color-third
+
+    &-info
+        +flexGrid(space-between)
+        margin-bottom: 16px
+
+    &-subtitle
+        +fontSize(20px,30px)
+        
+    &-date
+        +fontSize(16px,24px)
+
+    &-word
+        +fontSize(20px,30px)
+        color: #555555
+
+    &-link
+        +fontSize(36px,54px,bold)
+        color: $color-third
+        transition: .3s
+
+        &:hover
+            color: $color-primary

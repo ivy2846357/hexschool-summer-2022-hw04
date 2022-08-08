@@ -42,3 +42,10 @@ $color-black: black
     .store-card-img
         &.store-#{$i}
             +backgroundCover('../images/locate#{$i}.jpg')
+
+/* ------------------- 部落格文章圖片設定 ------------------- */
+
+@for $i from 1 through 5
+    .blog-article-img
+        &.blog-#{$i}
+            +backgroundCover('../images/blog-#{$i}.png')
