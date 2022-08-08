@@ -9,6 +9,7 @@
     &-item
         +flexGrid(space-between)
         position: relative
+        z-index: 1000
 
         +respond-to('sphone')
             display: block
@@ -20,16 +21,15 @@
         // 漢堡選單設定
         +respond-to('sphone')
             transition: .3s
-            display: block
+            display: none
             position: absolute
             top: 81px
             left: 0
             right: 0
             background-color: $color-primary
-            opacity: 0
 
             &.active
-                opacity: 1
+                display: block
 
         &-item
             +flexGrid(space-between)
@@ -58,17 +58,15 @@
     
     // 漢堡選單設定
     &-hamburger
-        
-        &-menu
-            display: none
-            cursor: pointer
-            +size(30px, 30px)
-            position: absolute
-            top: 25px
-            right: 20px
+        display: none
+        cursor: pointer
+        +size(30px, 30px)
+        position: absolute
+        top: 25px
+        right: 20px
 
-            +respond-to('sphone')
-                display: inline-block
+        +respond-to('sphone')
+            display: inline-block
 
         &-btn
             +size(30px, 3px)
