@@ -98,6 +98,37 @@
   background-position: center;
   background-size: cover; }
 
+/* ------------------- 太陽眼鏡商品圖片設定 ------------------- */
+.sunglasses-product-1 {
+  background-image: url("../images/products-1.png");
+  background-position: center;
+  background-size: cover; }
+
+.sunglasses-product-2 {
+  background-image: url("../images/products-2.png");
+  background-position: center;
+  background-size: cover; }
+
+.sunglasses-product-3 {
+  background-image: url("../images/products-3.png");
+  background-position: center;
+  background-size: cover; }
+
+.sunglasses-product-4 {
+  background-image: url("../images/products-4.png");
+  background-position: center;
+  background-size: cover; }
+
+.sunglasses-product-5 {
+  background-image: url("../images/products-5.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.sunglasses-product-6 {
+  background-image: url("../images/products-6.jpg");
+  background-position: center;
+  background-size: cover; }
+
 /* ------------------- 門市據點圖片設定 ------------------- */
 .store-card-img.store-1 {
   background-image: url("../images/locate1.jpg");
@@ -716,6 +747,14 @@ img {
       background-image: url("../images/banner-2.png");
       background-position: center;
       background-size: cover; }
+    .section-banner-img.sunglasses-img-glasses {
+      background-image: url("../images/banner-3.png");
+      background-position: center;
+      background-size: cover; }
+    .section-banner-img.sunglasses-img-woman {
+      background-image: url("../images/product-2-color.png");
+      background-position: center;
+      background-size: cover; }
 
 .section-product-title {
   font-size: 42px;
@@ -1225,6 +1264,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .product-list-content {
@@ -1278,6 +1320,26 @@ img {
         margin: 0 0 64px 0; } }
 
 .product-optical-img {
+  height: 224px; }
+
+.product-sunglasses-item {
+  width: 30%;
+  margin: 0 24px 80px 0; }
+  .product-sunglasses-item:nth-child(3n) {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .product-sunglasses-item {
+      width: 48%; }
+      .product-sunglasses-item:nth-child(2n) {
+        margin-right: 0; } }
+  @media screen and (max-width: 375px) {
+    .product-sunglasses-item {
+      width: 100%;
+      margin: 0 0 24px 0; }
+      .product-sunglasses-item:last-child {
+        margin: 0 0 64px 0; } }
+
+.product-sunglasses-img {
   height: 224px; }
 
 /*------------------------------------*\
