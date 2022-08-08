@@ -124,6 +124,32 @@
   background-position: center;
   background-size: cover; }
 
+/* ------------------- 部落格文章圖片設定 ------------------- */
+.blog-article-img.blog-1 {
+  background-image: url("../images/blog-1.png");
+  background-position: center;
+  background-size: cover; }
+
+.blog-article-img.blog-2 {
+  background-image: url("../images/blog-2.png");
+  background-position: center;
+  background-size: cover; }
+
+.blog-article-img.blog-3 {
+  background-image: url("../images/blog-3.png");
+  background-position: center;
+  background-size: cover; }
+
+.blog-article-img.blog-4 {
+  background-image: url("../images/blog-4.png");
+  background-position: center;
+  background-size: cover; }
+
+.blog-article-img.blog-5 {
+  background-image: url("../images/blog-5.png");
+  background-position: center;
+  background-size: cover; }
+
 /*------------------------------------*\
     CSS reset */
 /*------------------------------------*\ */
@@ -1192,5 +1218,82 @@ img {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400; }
+
+/*------------------------------------*\
+    部落格文章列表樣式 */
+/*------------------------------------*\ */
+.blog-article-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px; }
+  .blog-article-item:last-child {
+    margin-bottom: 124px; }
+
+.blog-article-img {
+  width: 50%;
+  height: 400px;
+  margin-right: 24px; }
+
+.blog-article-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%; }
+
+.blog-article-title {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 400;
+  color: #650300; }
+
+.blog-article-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px; }
+
+.blog-article-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400; }
+
+.blog-article-date {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400; }
+
+.blog-article-word {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #555555; }
+
+.blog-article-link {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: bold;
+  color: #650300;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .blog-article-link:hover {
+    color: #AA0601; }
 
 /*# sourceMappingURL=all.css.map */
