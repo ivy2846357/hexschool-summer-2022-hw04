@@ -36,6 +36,16 @@ $color-black: black
         .optical-product-#{$i}
             +backgroundCover('../images/products-#{$i}.jpg')
 
+/* ------------------- 太陽眼鏡商品圖片設定 ------------------- */
+
+@for $i from 1 through 6
+    @if $i <= 4
+        .sunglasses-product-#{$i}
+            +backgroundCover('../images/products-#{$i}.png')
+    @else 
+        .sunglasses-product-#{$i}
+            +backgroundCover('../images/products-#{$i}.jpg')
+
 /* ------------------- 門市據點圖片設定 ------------------- */
 
 @for $i from 1 through 5

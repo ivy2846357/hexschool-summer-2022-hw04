@@ -6,25 +6,28 @@
     
     &-article
 
+        // 文章上半部
         &-header
             display: flex
             width: 70%
             +respond-to('sphone')
                 width: 100%
 
+        // 文章下半部
         &-footer
             width: 70%
-
             +respond-to('phone')
                 width: 100%
             +respond-to('phone')
                 display: none
                 
+        // 文章內容
         &-content
             margin-right: 24px
             +respond-to('phone')
                 margin-right: 0
 
+        // 文章左側 tag 樣式
         &-tag
             margin-bottom: 8px
             display: flex
@@ -36,6 +39,7 @@
                 +respond-to('phone')
                     +fontSize(16px,24px)
 
+        // 文章標題
         &-title
             +fontSize(48px,72px)
             +respond-to('phone')
@@ -47,6 +51,7 @@
             +respond-to('phone')
                 +fontSize(16px,24px)
 
+        // 內文圖片
         &-img
             +size(100%,520px)
             object-fit: cover
@@ -56,6 +61,7 @@
             +respond-to('phone')
                 +size(100%,208px)
 
+        // 內文
         &-word
             +fontSize(16px,24px)
             color: #555555
@@ -63,6 +69,7 @@
             +respond-to('phone')
                 margin-bottom: 16px
 
+    // 分享按鈕
     &-share
         +flexGrid(flex-start)
         padding-bottom: 16px
@@ -79,6 +86,7 @@
             +size(24px)
             margin-right: 16px
 
+    // 文章上一頁、下一頁連結樣式
     &-page
 
         &-btns
@@ -106,6 +114,7 @@
         &-arrow
             +size(16px)
 
+    // 右側 tag 列表
     &-tag
         
         &-menu

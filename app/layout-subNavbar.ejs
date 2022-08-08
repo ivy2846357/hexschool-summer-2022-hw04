@@ -39,14 +39,14 @@
     </div>
     <!-- 商品導覽列 -->
     <ul class="subNavbar">
-      <li class="subNavbar-item">
-          <a href="" class="subNavbar-link active">OPTICAL</a>
+      <li class="subNavbar-item" data-link="opticalProduct">
+          <a href="./opticalProduct.html" class="subNavbar-link" id="opticalProduct">OPTICAL</a>
+      </li>
+      <li class="subNavbar-item" data-link="sunglassesProduct">
+          <a href="./sunglassesProduct.html" class="subNavbar-link" id="sunglassesProduct">SUNGLASSES</a>
       </li>
       <li class="subNavbar-item">
-          <a href="" class="subNavbar-link">SUNGLASSES</a>
-      </li>
-      <li class="subNavbar-item">
-          <a href="" class="subNavbar-link">FUNCTIONAL</a>
+          <a href="#" class="subNavbar-link">FUNCTIONAL</a>
       </li>
     </ul>
   </nav>
@@ -156,9 +156,9 @@
 </body>
 
 <script>
-  let hamburgerMenu = document.querySelector('.navbar-hamburger')
-  let hamburgerBtn = document.querySelector('.navbar-hamburger-btn')
-  let navbarMenu = document.querySelector('.navbar-menu')
+  const hamburgerMenu = document.querySelector('.navbar-hamburger')
+  const hamburgerBtn = document.querySelector('.navbar-hamburger-btn')
+  const navbarMenu = document.querySelector('.navbar-menu')
 
   hamburgerMenu.addEventListener('click', function(){
     hamburgerBtn.classList.toggle('active')

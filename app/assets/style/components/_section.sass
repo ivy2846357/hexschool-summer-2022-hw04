@@ -8,7 +8,7 @@
     &-fill
         background-color: $color-secondary
 
-    // 共用標題
+    // 通用區塊樣式
     &-default
         padding-top: 80px
         padding-bottom: 80px
@@ -16,10 +16,12 @@
             padding-top: 40px
             padding-bottom: 64px
 
+    // 部落格文章內文區塊
     &-blog-article
         padding-top: 24px
         padding-bottom: 80px
 
+    // 部落格文章列表區塊
     &-blog-list
         padding-top: 96px
         padding-bottom: 80px
@@ -82,10 +84,12 @@
                 margin-top: 24px
                 width: 100%
 
+    // 首頁表單區塊
     &-form
         +flexGrid(center,center)
         flex-direction: column
 
+    // 商品 banner 區塊
     &-banner
         display: flex
         
@@ -100,6 +104,12 @@
             &.optical-img-woman
                 +backgroundCover('../images/banner-2.png')
 
+            &.sunglasses-img-glasses  
+                +backgroundCover('../images/banner-3.png')
+            &.sunglasses-img-woman
+                +backgroundCover('../images/product-2-color.png')
+
+    // 商品標題共用樣式
     &-product
 
         &-title

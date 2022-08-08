@@ -4,9 +4,11 @@
 
 .product
 
+    // 共用商品列表樣式
     &-list
         margin-top: 32px
         display: flex
+        justify-content: center
         flex-wrap: wrap
 
         &-content
@@ -32,6 +34,7 @@
             &.light-brown
                 background-color: $color-lightBrown
     
+    // optical 商品列表
     &-optical
 
         &-item
@@ -55,3 +58,28 @@
 
         &-img
             height: 224px
+
+    &-sunglasses
+
+        &-item
+            width: 30%
+            margin: 0 24px 80px 0
+
+            &:nth-child(3n)
+                margin-right: 0
+
+            +respond-to('phone')
+                width: 48%
+
+                &:nth-child(2n)
+                    margin-right: 0
+
+            +respond-to('sphone')
+                width: 100%
+                margin: 0 0 24px 0
+                &:last-child
+                    margin: 0 0 64px 0
+
+        &-img
+            height: 224px
+
