@@ -10,9 +10,14 @@
     &-label
         +fontSize(24px, 36px)
         margin-right: 16px
+        +respond-to('sphone')
+            +fontSize(16px,24px)
+            margin-right: 8px
 
     &-list
         +fontSize(18px, 26px)
         width: 304px
         padding: 6px 12px
         color: #495057
+        +respond-to('sphone')
+            width: 75%

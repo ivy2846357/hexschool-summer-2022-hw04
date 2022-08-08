@@ -8,16 +8,22 @@
 
         &-header
             display: flex
+            width: 70%
+            +respond-to('sphone')
+                width: 100%
 
         &-footer
             width: 70%
 
             +respond-to('phone')
                 width: 100%
+            +respond-to('phone')
+                display: none
                 
         &-content
-            width: 70%
             margin-right: 24px
+            +respond-to('phone')
+                margin-right: 0
 
         &-tag
             margin-bottom: 8px
@@ -27,13 +33,19 @@
                 +fontSize(24px,36px,bold)
                 color: $color-primary
                 margin-right: 15px
+                +respond-to('phone')
+                    +fontSize(16px,24px)
 
         &-title
             +fontSize(48px,72px)
+            +respond-to('phone')
+                +fontSize(24px,36px)
 
         &-subtitle
             +fontSize(24px,36px)
             margin-bottom: 16px
+            +respond-to('phone')
+                +fontSize(16px,24px)
 
         &-img
             +size(100%,520px)
@@ -41,11 +53,15 @@
             margin-bottom: 8px
             +respond-to('phone')
                 +size(100%,320px)
+            +respond-to('phone')
+                +size(100%,208px)
 
         &-word
             +fontSize(16px,24px)
             color: #555555
             margin-bottom: 40px
+            +respond-to('phone')
+                margin-bottom: 16px
 
     &-share
         +flexGrid(flex-start)
@@ -94,6 +110,8 @@
         
         &-menu
             width: 28%
+            +respond-to('sphone')
+                display: none
 
         &-icon
             margin-right: 12px

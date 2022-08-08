@@ -13,7 +13,12 @@
     &-navbar
         display: flex
 
+        +respond-to('sphone')
+            +flexGrid(space-between)
+            width: 100%
+
         &-link
+            +fontSize(16px,24px)
             display: inline-block
             padding: 13px 0
             margin-right: 48px
@@ -21,3 +26,10 @@
             transition: .3s
             &:hover
                 color: #ffba08
+
+            +respond-to('sphone')
+                margin-right: 0
+
+        &-icon
+            +respond-to('sphone')
+                display: none

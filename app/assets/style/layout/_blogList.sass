@@ -14,8 +14,11 @@
             margin-bottom: 124px
             +respond-to('phone')
                 margin-bottom: 80px
+            +respond-to('sphone')
+                margin-bottom: 64px
 
-        
+        +respond-to('sphone')
+            flex-direction: column
 
     &-img
         +size(50%,400px)
@@ -23,11 +26,16 @@
 
         +respond-to('phone')
             +size(50%,208px)
+        +respond-to('sphone')
+            +size(100%,208px)
 
     &-content
         +flexGrid(space-between,flex-end)
         flex-direction: column
         width: 50%
+        +respond-to('sphone')
+            width: 100%
+            flex-direction: row
 
     &-title
         +fontSize(32px,48px)
@@ -56,6 +64,12 @@
         color: #555555
         +respond-to('phone')
             +fontSize(16px,24px)
+        +respond-to('sphone')
+            display: none
+
+    &-text
+        +respond-to('sphone')
+            width: 100%
 
     &-link
 
