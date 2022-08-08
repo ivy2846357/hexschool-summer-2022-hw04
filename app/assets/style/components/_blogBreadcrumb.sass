@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    麵包屑連結元件設定
+/*------------------------------------*\
+
+.blog-breadcrumb
+    +flexGrid(flex-start,baseline)
+    margin-bottom: 8px
+
+    &-item
+        margin-right: 16px
+        position: relative
+
+        &:last-child
+            &::after
+                content: ''
+
+        &::after
+            content: '/'
+            position: absolute
+            top: 50%
+            right: -10px
+            transform: translateY(-50%)
+
+    &-link
+        +fontSize(16px,24px)
+        color: $color-black
+
+        &.active
+            color: $color-primary
+
+        &:hover
+            color: $color-third

@@ -1,0 +1,103 @@
+/*------------------------------------*\
+    部落格內文設定
+/*------------------------------------*\
+
+.blog
+    
+    &-article
+        display: flex
+
+        &-content
+            width: 70%
+            margin-right: 24px
+
+        &-tag
+            margin-bottom: 8px
+            display: flex
+
+            &Word
+                +fontSize(24px,36px,bold)
+                color: $color-primary
+                margin-right: 15px
+
+        &-title
+            +fontSize(48px,72px)
+
+        &-subtitle
+            +fontSize(24px,36px)
+            margin-bottom: 16px
+
+        &-img
+            +size(100%,520px)
+            object-fit: cover
+            margin-bottom: 8px
+
+        &-word
+            +fontSize(16px,24px)
+            color: #555555
+            margin-bottom: 40px
+
+    &-share
+        +flexGrid(flex-start)
+        padding-bottom: 16px
+        margin-bottom: 24px
+        border-bottom: 1px solid $color-black
+
+        &-word
+            margin-right: 16px
+
+        &-list
+            display: flex
+
+        &-icon
+            +size(24px)
+            margin-right: 16px
+
+    &-page
+
+        &-btns
+            +flexGrid(space-between)
+            width: 100%
+
+        &-prev
+            transform: rotate(180deg)
+
+        &-link
+            +flexGrid
+            color: $color-black
+
+            >.blog-page-arrow
+                margin-right: 16px
+                margin-left: 0
+
+            &.reverse
+                flex-direction: row-reverse
+
+                >.blog-page-arrow
+                    margin-right: 0
+                    margin-left: 16px
+
+        &-arrow
+            +size(16px)
+
+    &-tag
+        
+        &-menu
+            width: 28%
+
+        &-icon
+            margin-right: 12px
+
+        &-title
+            +flexGrid(flex-start)
+            margin-bottom: 4px
+
+        &-word
+            +fontSize(32px,48px,bold)
+            color: $color-primary
+
+        &-item
+            +fontSize(24px,36px,bold)
+            color: $color-primary
+            display: inline-block
+            margin: 0 24px 4px 0
