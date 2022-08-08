@@ -16,9 +16,28 @@
             &:nth-child(3n)
                 margin: 0 0 48px 0
 
+            +respond-to('phone')
+                width: 48%
+                &:nth-child(3n)
+                    margin-right: 24px
+                &:nth-child(2n)
+                    margin: 0 0 48px 0
+
         &-detail
             width: 40%
             margin-right: 24px
+
+            +respond-to('phone')
+                width: 100%
+                display: flex
+                margin: 0 0 24px 0
+
+            >.store-card-img
+                width: 50%
+                margin-right: 24px
+
+            >.store-card-content
+                width: 50%
 
         &-info
             display: flex
@@ -34,7 +53,7 @@
             padding: 8px 24px
             border: 1px solid $color-gary
         
-        &-content
+        &-list
             +fontSize(20px, 30px)
             padding: 16px 24px
             border: 1px solid $color-gary

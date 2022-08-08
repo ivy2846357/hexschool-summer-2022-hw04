@@ -5,8 +5,16 @@
 .blog
     
     &-article
-        display: flex
 
+        &-header
+            display: flex
+
+        &-footer
+            width: 70%
+
+            +respond-to('phone')
+                width: 100%
+                
         &-content
             width: 70%
             margin-right: 24px
@@ -31,6 +39,8 @@
             +size(100%,520px)
             object-fit: cover
             margin-bottom: 8px
+            +respond-to('phone')
+                +size(100%,320px)
 
         &-word
             +fontSize(16px,24px)
@@ -87,6 +97,8 @@
 
         &-icon
             margin-right: 12px
+            +respond-to('phone')
+                +size(auto,24px)
 
         &-title
             +flexGrid(flex-start)
@@ -95,9 +107,14 @@
         &-word
             +fontSize(32px,48px,bold)
             color: $color-primary
+            +respond-to('phone')
+                +fontSize(16px,24px,bold)
+
 
         &-item
             +fontSize(24px,36px,bold)
             color: $color-primary
             display: inline-block
             margin: 0 24px 4px 0
+            +respond-to('phone')
+                +fontSize(16px,24px,bold)
