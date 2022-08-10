@@ -21,10 +21,13 @@
             margin-right: 24px
 
             +respond-to('phone')
-                +size(46%, 511px)
+                +size(47%, 511px)
                 &:nth-child(1),
                 &:nth-child(2)
                     margin-bottom: 24px
+                
+                &:nth-child(2n)
+                    margin-right: 0
 
             +respond-to('sphone')
                 +size(100%, 511px)

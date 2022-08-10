@@ -6,14 +6,14 @@
     padding: 48px 0 32px 0
     background-color: $color-primary
 
-    +respond-to('sphone')
+    +respond-to('phone')
         padding: 24px 0
 
     // footer 導覽列
     &-list
         +flexGrid(space-between)
 
-        +respond-to('sphone')
+        +respond-to('phone')
             +flexGrid(space-between,flex-start)
             border-bottom: 1px solid $color-white
 
@@ -33,7 +33,7 @@
         margin-top: 32px
         color: $color-white
 
-        +respond-to('sphone')
+        +respond-to('phone')
             +flexGrid(flex-start,flex-start)
             flex-direction: column
             margin-top: 16px
@@ -41,7 +41,7 @@
         &-menu
             display: flex
 
-            +respond-to('sphone')
+            +respond-to('phone')
                 flex-wrap: wrap
 
         &-item
@@ -49,7 +49,7 @@
             &:last-child
                 margin-right: 0
 
-            +respond-to('sphone')
+            +respond-to('phone')
                 width: 100%
                 margin: 8px 0 0 0
 
@@ -59,12 +59,12 @@
             @extend .link-border-animation
 
     &-lg
-        +respond-to('sphone')
+        +respond-to('phone')
             display: none
 
     &-sm
         display: none
-        +respond-to('sphone')
+        +respond-to('phone')
             display: block
 
 // 社群按鈕
@@ -76,12 +76,12 @@
         &:last-child
             margin-right: 0
 
-        +respond-to('sphone')
+        +respond-to('phone')
             margin-right: 8px
 
     &-link
         >img 
-            +respond-to('sphone')
+            +respond-to('phone')
                 +size(24px)
 
 // 聯絡方式
@@ -89,7 +89,7 @@
     padding: 35px 0
     border-bottom: 1px solid $color-white
 
-    +respond-to('sphone')
+    +respond-to('phone')
         padding: 0 0 16px 0
         border-bottom: none
     
@@ -100,7 +100,7 @@
         margin-right: 20px
         +size(36px)
 
-        +respond-to('sphone')
+        +respond-to('phone')
             +size(16px)
             margin-right: 12px
 
@@ -111,5 +111,5 @@
         &:hover
             color: #ffba08
 
-        +respond-to('sphone')
+        +respond-to('phone')
             +fontSize(16px,24px)

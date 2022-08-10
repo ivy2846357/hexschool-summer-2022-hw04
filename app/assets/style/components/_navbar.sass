@@ -11,7 +11,7 @@
         position: relative
         z-index: 1000
 
-        +respond-to('sphone')
+        +respond-to('phone')
             display: block
 
     // 導覽列表
@@ -19,7 +19,7 @@
         +flexGrid
 
         // 漢堡選單設定
-        +respond-to('sphone')
+        +respond-to('phone')
             transition: .3s
             display: none
             position: absolute
@@ -27,6 +27,7 @@
             left: 0
             right: 0
             background-color: $color-primary
+            padding: 12px 0
 
             &.active
                 display: block
@@ -37,7 +38,7 @@
             &:last-child
                 margin-right: 0
 
-            +respond-to('sphone')
+            +respond-to('phone')
                 margin-right: 8px
                 display: block
                 text-align: right
@@ -65,7 +66,7 @@
         top: 25px
         right: 20px
 
-        +respond-to('sphone')
+        +respond-to('phone')
             display: inline-block
 
         &-btn
