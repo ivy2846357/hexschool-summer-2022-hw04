@@ -9,9 +9,7 @@
         // 文章上半部
         &-header
             display: flex
-            width: 70%
-            +respond-to('sphone')
-                width: 100%
+            width: 100%
 
         // 文章下半部
         &-footer
@@ -23,8 +21,9 @@
                 
         // 文章內容
         &-content
+            width: 100%
             margin-right: 24px
-            +respond-to('phone')
+            +respond-to('sphone')
                 margin-right: 0
 
         // 文章左側 tag 樣式
