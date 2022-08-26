@@ -48,12 +48,16 @@ current: index
   <h3 class="section-index-title red">經典系列鏡框</h3>
   <ul class="feature-classic-list">
     <li class="feature-classic-item hover-translate-animation">
-      <img class="feature-classic-img" src="./assets/images/product-1-r.png" alt="product-img">
-      <h4 class="section-index-subtitle">OPTICAL</h4>
+      <a href="./opticalProduct.html">
+        <img class="feature-classic-img" src="./assets/images/product-1-r.png" alt="product-img">
+        <h4 class="section-index-subtitle">OPTICAL</h4>
+      </a>
     </li>
     <li class="feature-classic-item hover-translate-animation">
-      <img class="feature-classic-img" src="./assets/images/product-2-r.png" alt="product-img">
-      <h4 class="section-index-subtitle">SUNGLASSES</h4>
+      <a href="./sunglassesProduct.html">
+        <img class="feature-classic-img" src="./assets/images/product-2-r.png" alt="product-img">
+        <h4 class="section-index-subtitle">SUNGLASSES</h4>
+      </a>
     </li>
     <li class="feature-classic-item hover-translate-animation">
       <img class="feature-classic-img" src="./assets/images/product-3-r.png" alt="product-img">
@@ -123,23 +127,23 @@ current: index
     <ul class="form">
       <li class="form-list">
         <label class="form-text" for="name">姓名</label>
-        <input class="form-input" type="text" placeholder="陳小明">
+        <input class="form-input" id="name" name="name" type="text" placeholder="陳小明">
       </li>
       <li class="form-list">
-        <label class="form-text" for="name">聯絡電話</label>
-        <input class="form-input" type="text" placeholder="0912-345-678">
+        <label class="form-text" for="tel">聯絡電話</label>
+        <input class="form-input" id="tel" name="tel" type="text" placeholder="0912-345-678">
       </li>
       <li class="form-list">
-        <label class="form-text" for="name">電子郵件</label>
-        <input class="form-input" type="text" placeholder="example@email.com">
+        <label class="form-text" for="email">電子郵件</label>
+        <input class="form-input" id="email" name="email" type="text" placeholder="example@email.com">
       </li>
       <li class="form-list">
-        <label class="form-text" for="name">意見反應</label>
-        <textarea class="form-input" name="option" rows="8" placeholder="請輸入您的意見"></textarea>
+        <label class="form-text" for="opinion">意見反應</label>
+        <textarea class="form-input" id="opinion" name="opinion" rows="8" placeholder="請輸入您的意見"></textarea>
       </li>
       <li class="form-list">
-        <input class="form-radio" type="radio">
-        <label for="name">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+        <input class="form-radio" id="agree" type="checkbox">
+        <label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
       </li>
     </ul>
     <button class="form-submit-btn hover-btn-animation" type="button">確認送出</button>
