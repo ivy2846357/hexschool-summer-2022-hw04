@@ -455,7 +455,7 @@ img {
         font-size: 24px;
         line-height: 36px;
         font-weight: 400; } }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .subNavbar-link {
         font-size: 16px;
         line-height: 24px;
@@ -637,7 +637,7 @@ img {
 .section-default {
   padding-top: 80px;
   padding-bottom: 80px; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .section-default {
       padding-top: 40px;
       padding-bottom: 64px; } }
@@ -652,7 +652,7 @@ img {
   @media screen and (max-width: 768px) {
     .section-blog-list {
       padding-top: 80px; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .section-blog-list {
       padding-top: 40px;
       padding-bottom: 64px; } }
@@ -664,7 +664,7 @@ img {
   border-left: 8px solid #AA0601;
   padding-left: 16px;
   margin: 16px 0 33px 0; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .section-title {
       font-size: 24px;
       line-height: 36px;
@@ -674,7 +674,7 @@ img {
 .section-index {
   padding-top: 80px;
   padding-bottom: 80px; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .section-index {
       padding-top: 40px;
       padding-bottom: 40px; } }
@@ -687,7 +687,7 @@ img {
       color: #650300; }
     .section-index-title.white {
       color: white; }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .section-index-title {
         font-size: 24px;
         line-height: 36px;
@@ -737,7 +737,7 @@ img {
   .section-banner-img {
     width: 50%;
     height: 296px; }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .section-banner-img {
         height: 136px; } }
     .section-banner-img.optical-img-glasses {
@@ -762,7 +762,7 @@ img {
   line-height: 63px;
   font-weight: 400;
   text-align: center; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .section-product-title {
       font-size: 24px;
       line-height: 36px;
@@ -773,7 +773,7 @@ img {
   line-height: 48px;
   font-weight: 400;
   text-align: center; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .section-product-subtitle {
       font-size: 24px;
       line-height: 36px;
@@ -808,7 +808,7 @@ img {
     background-color: #AA0601;
     color: white;
     cursor: pointer; }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .form-submit-btn {
         width: 100%;
         padding: 16px 142px; } }
@@ -830,7 +830,7 @@ img {
     border: 1px solid #555555;
     padding: 12px 16px;
     cursor: pointer; }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .pagination-btn {
         padding: 12px 13px; } }
     .pagination-btn:hover {
@@ -857,7 +857,7 @@ img {
     line-height: 36px;
     font-weight: 400;
     margin-right: 16px; }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .dropdown-select-label {
         font-size: 16px;
         line-height: 24px;
@@ -870,7 +870,7 @@ img {
     width: 304px;
     padding: 6px 12px;
     color: #495057; }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .dropdown-select-list {
         width: 75%; } }
 
@@ -896,7 +896,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .search-navbar {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -921,10 +921,10 @@ img {
     transition: .3s; }
     .search-navbar-link:hover {
       color: #ffba08; }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .search-navbar-link {
         margin-right: 0; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .search-navbar-icon {
       display: none; } }
 
@@ -987,7 +987,7 @@ img {
     margin: 0 auto;
     padding: 0 12px;
     width: 1320px; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .header {
       width: 100%;
       height: 396px; } }
@@ -996,7 +996,7 @@ img {
     line-height: 54px;
     font-weight: 400;
     color: #650300; }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .header-subtitle {
         font-size: 16px;
         line-height: 24px;
@@ -1006,7 +1006,7 @@ img {
     line-height: 96px;
     font-weight: bold;
     color: #650300; }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .header-title {
         font-size: 24px;
         line-height: 36px;
@@ -1062,7 +1062,7 @@ img {
       width: 48%; }
       .company-info-item:nth-child(2n) {
         margin-right: 0; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .company-info-item {
       width: 100%;
       margin: 0 0 32px 0; } }
@@ -1100,7 +1100,7 @@ img {
   margin-top: 48px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .feature-classic-list {
       width: 100%;
       margin-top: 24px; } }
@@ -1134,7 +1134,7 @@ img {
   @media screen and (max-width: 768px) {
     .feature-classic-img {
       width: 50%; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .feature-classic-img {
       width: 100%; } }
 
@@ -1151,7 +1151,7 @@ img {
       .feature-signed-list {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .feature-signed-list {
         margin-top: 24px; } }
   .feature-signed-item {
@@ -1199,7 +1199,7 @@ img {
     .recommend-list {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .recommend-list {
       margin-top: 24px; } }
   .recommend-list-item {
@@ -1218,7 +1218,7 @@ img {
           margin-bottom: 24px; }
         .recommend-list-item:nth-child(2n) {
           margin-right: 0; } }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .recommend-list-item {
         width: 100%;
         height: 511px;
@@ -1315,7 +1315,7 @@ img {
       width: 48%; }
       .product-optical-item:nth-child(2n) {
         margin-right: 0; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .product-optical-item {
       width: 100%;
       margin: 0 0 24px 0; }
@@ -1335,7 +1335,7 @@ img {
       width: 48%; }
       .product-sunglasses-item:nth-child(2n) {
         margin-right: 0; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .product-sunglasses-item {
       width: 100%;
       margin: 0 0 24px 0; }
@@ -1367,7 +1367,7 @@ img {
         margin-right: 24px; }
       .store-card-introduction:nth-child(2n) {
         margin: 0 0 48px 0; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .store-card-introduction {
       width: 100%;
       margin-right: 0;
@@ -1388,10 +1388,11 @@ img {
       margin: 0 0 24px 0; }
       .store-card-detail > .store-card-img {
         width: 50%;
+        height: 100%;
         margin-right: 24px; }
       .store-card-detail > .store-card-content {
         width: 50%; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .store-card-detail {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1460,7 +1461,7 @@ img {
   margin-bottom: 32px; }
   .question-info:last-child {
     margin-bottom: 0; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .question-info {
       margin-bottom: 24px; } }
   .question-info-title {
@@ -1490,10 +1491,10 @@ img {
     @media screen and (max-width: 768px) {
       .blog-list-item:last-child {
         margin-bottom: 80px; } }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 576px) {
       .blog-list-item:last-child {
         margin-bottom: 64px; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .blog-list-item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1508,7 +1509,7 @@ img {
     .blog-list-img {
       width: 50%;
       height: 208px; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .blog-list-img {
       width: 100%;
       height: 208px; } }
@@ -1528,7 +1529,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .blog-list-content {
       width: 100%;
       -webkit-box-orient: horizontal;
@@ -1587,11 +1588,11 @@ img {
       font-size: 16px;
       line-height: 24px;
       font-weight: 400; } }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .blog-list-word {
       display: none; } }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .blog-list-text {
     width: 100%; } }
 
@@ -1639,7 +1640,7 @@ img {
 .blog-article-content {
   width: 100%;
   margin-right: 24px; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .blog-article-content {
       margin-right: 0; } }
 
@@ -1776,7 +1777,7 @@ img {
 
 .blog-tag-menu {
   width: 28%; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 576px) {
     .blog-tag-menu {
       display: none; } }
 
@@ -1811,6 +1812,9 @@ img {
       font-weight: bold; } }
 
 .blog-tag-item {
+  display: inline-block; }
+
+.blog-tag-link {
   font-size: 24px;
   line-height: 36px;
   font-weight: bold;
@@ -1818,7 +1822,7 @@ img {
   display: inline-block;
   margin: 0 24px 4px 0; }
   @media screen and (max-width: 768px) {
-    .blog-tag-item {
+    .blog-tag-link {
       font-size: 16px;
       line-height: 24px;
       font-weight: bold; } }
