@@ -1820,7 +1820,12 @@ img {
   font-weight: bold;
   color: #AA0601;
   display: inline-block;
-  margin: 0 24px 4px 0; }
+  margin: 0 24px 4px 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .blog-tag-link:hover {
+    color: #650300; }
   @media screen and (max-width: 768px) {
     .blog-tag-link {
       font-size: 16px;
